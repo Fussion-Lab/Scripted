@@ -112,6 +112,9 @@ echo "Done"
 echo "Finalizing . . . . "
 rm -rf $outdir
 
+echo " cleanup tools "
+rm -rf $LOCALDIR/tools/Firmware_extractor
+
 echo " merge system has been mount at work and be free to edit it and remember to unmount system.img"
 
 echo "Done"
