@@ -66,14 +66,14 @@ echo "Merging system_ext . . . . "
 	umount -l $outdir/system_ext
 fi
 
-if [ -f "$outdir/system_other.img" ]; then
-	echo "Merging system_other . . . . "
-	mkdir $outdir/system_other
-	mount -o ro $outdir/system_other.img $outdir/system_other/
-	cp -v -r -p $outdir/system_other/* $working/system/ &> /dev/null
-	sync
-	umount -l $outdir/system_other
-fi
+#if [ -f "$outdir/system_other.img" ]; then
+#	echo "Merging system_other . . . . "
+#	mkdir $outdir/system_other
+#	mount -o ro $outdir/system_other.img $outdir/system_other/
+#	cp -v -r -p $outdir/system_other/* $working/system/ &> /dev/null
+#	sync
+#	umount -l $outdir/system_other
+#fi
 
 if [ -f "$outdir/opproduct.img" ]; then
 	echo "Merging opproduct . . . . "
